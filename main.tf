@@ -2,7 +2,9 @@
 # Contains reference across to the ChatGPT - Telegram Terraform Module
 ##
 
-# module "chatgpt-telegram" {
+ module "chatgpt-telegram" {
+    source = "./aws-chatgpt-telegram"
+    function_name = var.function_name
 
-# }
+ }
 
